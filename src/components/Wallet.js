@@ -16,7 +16,6 @@ const WalletBySam = () => {
 
     const { chainId, activateBrowserWallet, account, deactivate, } = useEthers()
     const rinkebyBalance = useEtherBalance(account, { chainId: Rinkeby.chainId })
-    // const kovanBalance = useEtherBalance(account, { chainId: Kovan.chainId })
     const mainnetBalance = useEtherBalance(account, { chainId: Mainnet.chainId })
 
     const provider = window.ethereum
@@ -73,7 +72,7 @@ const WalletBySam = () => {
                         <div>
                             {
                                 <button onClick={() => { switchToMainnet(); switchToRinkeby() }}>
-                                    {chainId == Rinkeby.chainId ? <>Switch to Mainnet</> : <>Switch to Rinkeby</>}
+                                    {chainId === Rinkeby.chainId ? <>Switch to Mainnet</> : <>Switch to Rinkeby</>}
                                 </button>
                             }
                         </div>
@@ -81,7 +80,7 @@ const WalletBySam = () => {
                         {/* Display wallet balance */}
                         <div style={{ display: 'flex', justifyContent: 'center', gap: '10px 20px' }}>
                             {
-                                chainId == Rinkeby.chainId
+                                chainId === Rinkeby.chainId
                                     ?
                                     <>
                                         {

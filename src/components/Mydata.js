@@ -25,7 +25,7 @@ function UpdateData() {
     const contract = new Contract(wethContractAddress, ERC20_ABI_Interface)
     const { state, send } = useContractFunction(contract, 'updateData')
     const { status } = state
-    const { activateBrowserWallet, account, deactivate } = useEthers()
+    const { account } = useEthers()
 
 
     const handleChange = (e) => {

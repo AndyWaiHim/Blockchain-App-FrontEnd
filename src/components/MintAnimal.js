@@ -15,7 +15,7 @@ function MintAnimal() {
     const contract = new Contract(wethContractAddress, ERC20_ABI_Interface)
     const { state, send: createPack } = useContractFunction(contract, 'createPack')
     const { status } = state
-    const { activateBrowserWallet, account, deactivate } = useEthers()
+    const { account } = useEthers()
 
     const handleClick1 = () => {
         createPack(3, { value: "40000000000000000" });
