@@ -35,13 +35,13 @@ function WalletButton() {
                 {rendered !== "" && rendered}
             </button>
 
-            <a href="https://www.google.com">
+            <a href="https://testnets.opensea.io/collection/the-dog-of-andybimbam">
                 <button className="logo">
                     <img src={require('../image/opensealogo.png')} alt="Logo" width="40" height="40" />
                 </button>
             </a>
 
-            <a href="https://www.google.com">
+            <a href="https://twitter.com/AndyHim52">
                 <button className="logo">
                     <img src={require('../image/twitterlogo.png')} alt="Logo" width="35" height="30" />
                 </button>
