@@ -1,6 +1,5 @@
 import { shortenAddress, useEthers } from "@usedapp/core";
 import React, { useEffect, useState } from "react";
-// import { Button } from "./";
 
 function WalletButton() {
     const [rendered, setRendered] = useState("");
@@ -22,20 +21,32 @@ function WalletButton() {
     }, [error]);
 
     return (
-        <button
-            onClick={() => {
-                if (!account) {
-                    activateBrowserWallet();
-                } else {
-                    deactivate();
-                }
-            }}
-            className="btn"
-        >
-            {rendered === "" && "Connect Wallet"}
-            {rendered !== "" && rendered}
-        </button>
+        <div>
+            <button className="btn"
+                onClick={() => {
+                    if (!account) {
+                        activateBrowserWallet();
+                    } else {
+                        deactivate();
+                    }
+                }}
+            >
+                {rendered === "" && "Connect Wallet"}
+                {rendered !== "" && rendered}
+            </button>
 
+            <a href="https://www.google.com">
+                <button className="logo">
+                    <img src={require('../image/opensealogo.png')} width="40" height="40" />
+                </button>
+            </a>
+
+            <a href="https://www.google.com">
+                <button className="logo">
+                    <img src={require('../image/twitterlogo.png')} width="35" height="30" />
+                </button>
+            </a>
+        </div>
     );
 }
 
