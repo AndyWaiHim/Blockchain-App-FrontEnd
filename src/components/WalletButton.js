@@ -1,22 +1,19 @@
-import { shortenAddress, useEthers, useLookupAddress } from "@usedapp/core";
+import { shortenAddress, useEthers } from "@usedapp/core";
 import React, { useEffect, useState } from "react";
-import { Button } from "./";
+// import { Button } from "./";
 
 function WalletButton() {
     const [rendered, setRendered] = useState("");
 
-    const ens = useLookupAddress();
     const { account, activateBrowserWallet, deactivate, error } = useEthers();
 
     useEffect(() => {
-        if (ens) {
-            setRendered(ens);
-        } else if (account) {
+        if (account) {
             setRendered(shortenAddress(account));
         } else {
             setRendered("");
         }
-    }, [account, ens, setRendered]);
+    }, [account]);
 
     useEffect(() => {
         if (error) {
@@ -25,7 +22,7 @@ function WalletButton() {
     }, [error]);
 
     return (
-        <Button
+        <button
             onClick={() => {
                 if (!account) {
                     activateBrowserWallet();
@@ -33,10 +30,12 @@ function WalletButton() {
                     deactivate();
                 }
             }}
+            className="btn"
         >
             {rendered === "" && "Connect Wallet"}
             {rendered !== "" && rendered}
-        </Button>
+        </button>
+
     );
 }
 
