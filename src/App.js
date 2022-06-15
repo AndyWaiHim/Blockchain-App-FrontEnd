@@ -16,10 +16,29 @@ function App() {
 
   return (
     <Container>
-
       <Header>
+        <div className="headnav">
+          <BrowserRouter >
+            <ul className="nav nav-tabs">
+              <li>
+                <NavLink to="/default" className="nav-link" activeClassName="active">Default App</NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink to="/wallet" className="nav-link" activeClassName="active">My Wallet</NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink to="/data" className="nav-link" activeClassName="active">Update data</NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink to="/mintanimal" className="nav-link" activeClassName="active">Mint Animal</NavLink>
+              </li>
+            </ul>
+          </BrowserRouter>
+        </div>
         <WalletButton />
       </Header>
+
+
 
       <BrowserRouter>
         <header className="bg-light pt-3">

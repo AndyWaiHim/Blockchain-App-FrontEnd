@@ -47,8 +47,8 @@ export const Image = styled.img`
 `;
 
 export const LinkFromStyled = styled.a.attrs({
-    target: "_blank",
-    rel: "noopener noreferrer",
+  target: "_blank",
+  rel: "noopener noreferrer",
 })`
   color: #61dafb;
   margin-top: 8px;
