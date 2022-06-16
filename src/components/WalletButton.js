@@ -41,7 +41,7 @@ function WalletButton() {
                 </button>
             </a>
 
-            <a href="https://twitter.com/AndyHim52">
+            <a href="https://twitter.com/AndyWaiHim52">
                 <button className="logo">
                     <img src={require('../image/twitterlogo.png')} alt="Logo" width="35" height="30" />
                 </button>
