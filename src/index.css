@@ -35,18 +35,31 @@ code {
 }
 
 .logo {
-  background-color: #000;
+  background-color: #191a14;
   padding: 4px;
   margin: 20px;
+  border: 0px;
 }
 
 .headnav {
   position: absolute;
-  top: 15px;
+  top: 25px;
   left: 20px;
-  color: white;
+  color: black;
   padding: 0px;
   margin: 0px;
   height: 0px;
   justify-content: flex-start;
+}
+
+.nav-link {
+  color: white;
+}
+
+.component {
+  position: relative;
+  top: 150px;
+  color: white;
+  display: flex;
+  margin-bottom: 200px;
 }

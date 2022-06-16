@@ -27,7 +27,8 @@ export const Container = styled.div`
   background-color: #191a14;
   display: flex;
   flex-direction: column;
-  height: calc(100vh);
+  height : calc(250vh - 20em);
+  border:5px solid white;
 `;
 
 export const Header = styled.header`
@@ -44,6 +45,16 @@ export const Image = styled.img`
   height: 40vmin;
   margin-bottom: 16px;
   pointer-events: ;
+`;
+
+export const Footer = styled.footer`
+  align-items: center;
+  background-color: #191a14;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  min-height: 70px;
 `;
 
 export const LinkFromStyled = styled.a.attrs({
