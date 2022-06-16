@@ -1,6 +1,6 @@
 # Disclaimer
 
-This project is a first experience as a front end developper, using Javascript and ReactJS
+This project is a first experience as a frontend developer, using Javascript and ReactJS
 
 This project is under construction, deployed on Netfily at the following link : https://meek-concha-c3560c.netlify.app
 
