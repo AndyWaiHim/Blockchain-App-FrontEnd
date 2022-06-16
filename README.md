@@ -1,10 +1,12 @@
 # Disclaimer
 
-This project is a first experience as a front end developper. Suggestion are welcomed, thank you.
+This project is a first experience as a front end developper, using Javascript and ReactJS
 
 This project is under construction, deployed on Netfily at the following link : https://meek-concha-c3560c.netlify.app
 
 # Depedencies
+
+This project used the tools Usedapp, Styled Component and React Router Dom
 
 1 - npm install @usedapp/core ethers
 2 - npm install --save styled-components
